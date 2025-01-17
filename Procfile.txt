@@ -1,0 +1,1 @@
+web: gunicorn lbhsolutions.wsgi:application  --log-file –
