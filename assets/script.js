@@ -41,6 +41,6 @@ document.querySelectorAll('.action-button').forEach(button => {
 //     window.location.href = url;
 
 function navigateTo(urls){
-    const url = `http://127.0.0.1/filtered_solutions/${encodeURIComponent(urls)}/`;
+    const url = `https://lbhsolutions-b91b2d882035.herokuapp.com/filtered_solutions/${encodeURIComponent(urls)}/`;
     window.location.href = url;
 }
