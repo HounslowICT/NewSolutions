@@ -36,7 +36,11 @@ document.querySelectorAll('.action-button').forEach(button => {
 //     window.location.href = url;
 
 
+// function navigateTo(urls){
+//     const url = `http://127.0.0.1:8000/filtered_solutions/${encodeURIComponent(urls)}/`;
+//     window.location.href = url;
+
 function navigateTo(urls){
-    const url = `http://127.0.0.1:8000/filtered_solutions/${encodeURIComponent(urls)}/`;
+    const url = `http://127.0.0.1/filtered_solutions/${encodeURIComponent(urls)}/`;
     window.location.href = url;
 }
