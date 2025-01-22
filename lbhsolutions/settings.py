@@ -1,8 +1,6 @@
 from pathlib import Path
 import os
 import dj_database_url
-# import django_heroku
-# import  dj_database_path
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -20,10 +18,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['lbhsolutions-b91b2d882035.herokuapp.com', '127.0.0.1']
 
-# ALLOWED_HOSTS = ['*']
-
-
-# Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -70,9 +64,10 @@ WSGI_APPLICATION = 'lbhsolutions.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-
 DATABASES = {
-    'default': dj_database_url.config(default='postgres://localhost')
+    'default': dj_database_url.config(
+        default='postgres://ucf2pe1stlctne:p8216e876c37131d52ce7f4369da8a57c39ef9dac5dd2decda788015754728ecb@c724r43q8jp5nk.cluster-czz5s0kz4scl.eu-west-1.rds.amazonaws.com:5432/d23qe2e8atkul3',
+        conn_max_age=600, ssl_require=True)
 }
 
 
